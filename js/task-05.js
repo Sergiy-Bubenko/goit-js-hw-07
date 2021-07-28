@@ -6,7 +6,7 @@ nameInputRef.addEventListener('input', eventInput);
 function eventInput(event) {
   event.target.value === '' ? nameOutputRef.textContent = 'незнакомец' :
   nameOutputRef.textContent = event.target.value;
-}
+};
 
 
 

@@ -15,15 +15,15 @@ const images = [
 
 
 const galleryRef = document.querySelector('#gallery');
-galleryRef.classList.add('list')
+galleryRef.classList.add('list');
 
 const listGallery = images.map(image => {
   const li = document.createElement('li');
-  li.classList.add('item')
+  li.classList.add('item');
   li.insertAdjacentHTML(
     'beforeend', `<img class="picture" src="${image.url}"
        alt="${image.alt}">`);
   return li;
 });
 
-galleryRef.append(...listGallery)
+galleryRef.append(...listGallery);
